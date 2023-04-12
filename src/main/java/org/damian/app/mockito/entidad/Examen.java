@@ -12,10 +12,15 @@ public class Examen {
         this.preguntas= new ArrayList<>();
     }
 
+    public Examen(Long id, String nombre, List<String> preguntas) {
+        this.id = id;
+        this.nombre = nombre;
+        this.preguntas = preguntas;
+    }
+
     public Examen(Long id, String nombre) {
         this.id = id;
         this.nombre = nombre;
-
     }
 
     public Long getId() {
